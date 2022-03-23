@@ -1,0 +1,15 @@
+﻿@model MVCCV.Models.Entity.TblYeteneklerim
+@{
+    ViewBag.Title = "YeniYetenek";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h4>Yeni Yetenek Ekleme Sayfası</h4>
+<br />
+<form method="post">
+    <label>Yetenek Adı</label>
+    <input class="form-control" maxlength="100" type="text" name="Yetenek" placeholder="Yetenek Adı Giriniz..." />
+    <label>Yetenek Puanı ( 100 üzerinden )</label>
+    <input class="form-control" maxlength="3" type="text" name="Oran" placeholder="100 puan üzerinden yetenek puanı girin..." />
+    <br />
+    <button class="btn btn-primary">Yeni Yetenek Ekle</button>
+</form>

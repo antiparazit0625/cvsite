@@ -1,0 +1,17 @@
+﻿@model MVCCV.Models.Entity.TblLogın
+@{
+    ViewBag.Title = "DeneyimEkle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h4>Yeni Kullanıcı Ekleme Sayfası</h4>
+<br />
+<form method="post">
+    <label>Kullanıcı Adı</label>
+    <input class="form-control" maxlength="100" type="text" name="KullanıcıAdi" placeholder="Kullanıcı Adı..." />
+    <br />
+    <label>Alt Başlık</label>
+    <input class="form-control" maxlength="100" type="password" name="Sifre" placeholder="Şifre Giriniz..." />
+    <br />
+    <button class="btn btn-primary">Yeni Kullanıcı Ekle</button>
+</form>

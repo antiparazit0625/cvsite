@@ -1,0 +1,27 @@
+﻿@model MVCCV.Models.Entity.TblSertifikalarım
+@{
+    ViewBag.Title = "SertifikaEkle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h4> Sertifika Ekleme Sayfası</h4>
+<br />
+<div class="col col-md-12">
+    <form method="post">
+        @Html.Label("Sertifika Tarihi")
+        @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control" })
+        @Html.Label("Sertifika Açıklaması")
+        @Html.TextBoxFor(x => x.ACIKLAMA, new { @class = "form-control" })
+
+        <br />
+        <a href="/Sertifika/SertifikaEkle">
+            <button class="btn btn-primary">Sertifika Ekle</button>
+        </a>
+    </form>
+
+</div>
+
+<br />
+
+
+
+

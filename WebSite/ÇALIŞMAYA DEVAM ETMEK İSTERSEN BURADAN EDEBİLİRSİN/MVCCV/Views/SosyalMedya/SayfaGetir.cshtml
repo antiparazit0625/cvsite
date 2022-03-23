@@ -1,0 +1,20 @@
+﻿@model MVCCV.Models.Entity.sosyalmedya
+
+@{
+    ViewBag.Title = "SayfaGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h4>Sosyal Medya Hesap Bilgisi Güncelleme Sayfası</h4>
+<form method="post">
+    @Html.Label("Sosyal Medya Hesabı ID")
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control" })
+    @Html.Label("Ad")
+    @Html.TextBoxFor(x => x.ad, new { @class = "form-control" })
+    @Html.Label("Link")
+    @Html.TextBoxFor(x => x.link, new { @class = "form-control" })
+    @Html.Label("İkon")
+    @Html.TextBoxFor(x => x.ikon, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-primary">Güncelle</button>
+</form>
+

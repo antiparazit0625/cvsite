@@ -1,0 +1,18 @@
+﻿@model MVCCV.Models.Entity.TblLogın
+@{
+    ViewBag.Title = "DeneyimGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h4>Şifre Güncelleme Sayfası</h4>
+<form method="post">
+    @Html.Label("Admin ID")
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control" })
+    @Html.Label("Kullanıcı Adı")
+    @Html.TextBoxFor(x => x.KullanıcıAdi, new { @class = "form-control" })
+    @Html.Label("Şifre")
+    @Html.PasswordFor(x => x.Sifre, new { @class = "form-control"  })
+    <br />
+    <button class="btn btn-primary">Güncelle</button>
+</form>
+

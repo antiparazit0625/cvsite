@@ -1,0 +1,21 @@
+﻿@model MVCCV.Models.Entity.TblDeneyimler
+@{
+    ViewBag.Title = "DeneyimEkle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h4>Yeni Deneyim Ekleme Sayfası</h4>
+<br />
+<form method="post">
+    <label>Başlık</label>
+    <input class="form-control" maxlength="100" type="text" name="Baslik" placeholder="Başlık Giriniz..." />
+    <label>Alt Başlık</label>
+    <input class="form-control" maxlength="100" type="text" name="AltBaslik" placeholder="Alt Başlık Giriniz..." />
+    <label>Tarih</label>
+    <input class="form-control" maxlength="100" type="text" name="Tarih" placeholder="Çalışma Tarih Aralığını Giriniz..." />
+    <label>Açıklama</label>
+    <textarea name="ACİKLAMA" class="form-control" placeholder=" Açıklama Giriniz..." rows="5" /></textarea>
+
+    <br />
+    <button class="btn btn-primary">Yeni Deneyim Ekle</button>
+</form>
